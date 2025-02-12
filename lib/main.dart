@@ -132,7 +132,7 @@ class MyApp extends StatelessWidget {
                       //     }
                       //   },
                       // ),
-                      home: const Dashboard(),
+                      home: const LoginPage(),
                       routes: AppRouters.routes,
                     ),
                     loading.isLoading

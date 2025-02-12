@@ -1,3 +1,4 @@
+import 'package:alan_voice/alan_voice.dart';
 import 'package:datn_trung/model/device_model.dart';
 import 'package:datn_trung/res/fonts/app_fonts.dart';
 import 'package:datn_trung/res/images/app_images.dart';
@@ -10,7 +11,7 @@ import 'package:datn_trung/themes/app_colors.dart';
 import 'package:datn_trung/util/app_function.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:alan_voice/alan_voice.dart';
+// import 'package:alan_voice/alan_voice.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -115,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
     AlanVoice.addButton(
         "6a67a96d28b537ebbc8f183f2fa235f62e956eca572e1d8b807a3e2338fdd0dc/stage",
         server: "v1.alan.app");
-
+    
     /// Handle commands from Alan AI Studio
     AlanVoice.onCommand.add((command) {
       print("got new command ${command.toString()}");

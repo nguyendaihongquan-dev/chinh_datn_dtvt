@@ -1,4 +1,6 @@
 PODS:
+  - alan_voice (0.0.1):
+    - Flutter
   - Firebase/Analytics (11.6.0):
     - Firebase/Core
   - Firebase/Auth (11.6.0):
@@ -127,16 +129,23 @@ PODS:
     - nanopb/encode (= 3.30910.0)
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
+  - package_info (0.0.1):
+    - Flutter
   - PromisesObjC (2.4.0)
   - RecaptchaInterop (100.0.0)
+  - soundpool (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
+  - alan_voice (from `.symlinks/plugins/alan_voice/ios`)
   - Firebase/Analytics
   - Firebase/Auth
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_database (from `.symlinks/plugins/firebase_database/ios`)
   - Flutter (from `Flutter`)
+  - package_info (from `.symlinks/plugins/package_info/ios`)
+  - soundpool (from `.symlinks/plugins/soundpool/ios`)
 
 SPEC REPOS:
   trunk:
@@ -160,6 +169,8 @@ SPEC REPOS:
     - RecaptchaInterop
 
 EXTERNAL SOURCES:
+  alan_voice:
+    :path: ".symlinks/plugins/alan_voice/ios"
   firebase_auth:
     :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
@@ -168,8 +179,13 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_database/ios"
   Flutter:
     :path: Flutter
+  package_info:
+    :path: ".symlinks/plugins/package_info/ios"
+  soundpool:
+    :path: ".symlinks/plugins/soundpool/ios"
 
 SPEC CHECKSUMS:
+  alan_voice: 3299393a953a060d0e937776ba6efcf5c4a61304
   Firebase: 374a441a91ead896215703a674d58cdb3e9d772b
   firebase_auth: 9927cecefe4daaf92b0fbe5d1d283e9329445177
   firebase_core: e2aa06dbd854d961f8ce46c2e20933bee1bf2d2b
@@ -190,8 +206,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 4cb0aa086996858328a1fca61f9bfe81cfdfdfa9
   leveldb-library: cc8b8f8e013647a295ad3f8cd2ddf49a6f19be19
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
+  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
+  soundpool: c7f4422ca206e77f8900ed3c4ee6a6ff5a0e38a9
 
 PODFILE CHECKSUM: 9d1a2054b1d1cebe520e0bab5bab95b31da1aea4
 

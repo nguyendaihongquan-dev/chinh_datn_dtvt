@@ -27,6 +27,9 @@ class _LoginPageState extends State<LoginPage> {
     AppFunction.showLoading(context);
 
     try {
+      FirebaseAuth.instance.setLanguageCode('vi'); // Hoặc 'en', 'fr', ...
+
+      // ignore: unused_local_variable
       UserCredential userCredential = await _auth.signInWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
@@ -50,7 +53,8 @@ class _LoginPageState extends State<LoginPage> {
       } else if (e.code == 'wrong-password') {
         errorMessage = 'Sai mật khẩu';
       } else {
-        errorMessage = 'Lỗi không xác định';
+        errorMessage = 'Lỗi không xác định $e';
+        print(e);
       }
 
       if (!mounted) return;
