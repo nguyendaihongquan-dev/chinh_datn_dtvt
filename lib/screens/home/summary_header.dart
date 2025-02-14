@@ -30,7 +30,7 @@ class SummaryHeader extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'Độ ẩm',
+                  'Nhiệt độ',
                   style: AppFonts.quicksandMedium500(
                     16,
                     AppColors.white,
@@ -57,7 +57,7 @@ class SummaryHeader extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'Humidity',
+                  'Độ ẩm',
                   style: AppFonts.quicksandMedium500(
                     16,
                     AppColors.white,
